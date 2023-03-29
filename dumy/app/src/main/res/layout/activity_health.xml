@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Health">
+
+
+    <ImageView
+        android:id="@+id/ivmenstruation"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="36dp"
+        android:src="@drawable/female"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/ivmenstruation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <ScrollView
+            android:id="@+id/PcosPcod"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:cardCornerRadius="50dp"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/round"
+                   android:backgroundTint="#f3f7f6"
+                   >
+
+
+
+
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="450dp"
+
+                       android:src="@drawable/pcos_avoid" />
+
+
+
+
+               </LinearLayout>
+
+               <TextView
+                   android:id="@+id/tvPCOD"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/roboto_bold"
+                   android:text="PCOD"
+                   android:layout_gravity="center"
+                   android:textColor="#273c2c"
+                   android:textSize="25sp" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/roboto_bold"
+                   android:text="(Polycystic Ovarian Diesease)"
+                   android:layout_gravity="center"
+                   android:textColor="#273c2c"
+                   android:textSize="15sp" />
+
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginVertical="5dp"
+                   android:background="@drawable/round"
+                   android:backgroundTint="#f3f7f6"
+                   android:orientation="vertical"
+                   android:padding="20dp">
+
+
+                   <androidx.constraintlayout.widget.ConstraintLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:id="@+id/tvAyurvedic"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/roboto_bold"
+                           android:text="Remedies"
+                           android:textSize="15sp"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent" />
+
+
+                   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                   <HorizontalScrollView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:scrollbars="none">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal">
+
+
+
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/oneh"
+                               android:layout_marginEnd="10dp"
+                               />
+
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/twoh"
+                               />
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/threeh"
+                               android:layout_marginEnd="10dp"
+                               />
+
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/four"
+                               />
+
+
+
+
+
+
+                       </LinearLayout>
+
+                   </HorizontalScrollView>
+
+
+               </LinearLayout>
+<!--               <TextView-->
+<!--                   android:id="@+id/tvPCOS"-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="wrap_content"-->
+<!--                   android:fontFamily="@font/roboto_bold"-->
+<!--                   android:text="PCOS"-->
+<!--                   android:layout_gravity="center"-->
+<!--                   android:textColor="#273c2c"-->
+<!--                   android:textSize="25sp" />-->
+
+<!--               <TextView-->
+
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="wrap_content"-->
+<!--                   android:fontFamily="@font/roboto_bold"-->
+<!--                   android:text="(Polycystic Ovarian Syndrome)"-->
+<!--                   android:layout_gravity="center"-->
+<!--                   android:textColor="#273c2c"-->
+<!--                   android:textSize="15sp" />-->
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginVertical="5dp"
+                   android:background="@drawable/round"
+                   android:backgroundTint="#f3f7f6"
+                   android:orientation="vertical"
+                   android:padding="20dp">
+
+
+                   <androidx.constraintlayout.widget.ConstraintLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:id="@+id/tvAyurvedicrem"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/roboto_bold"
+                           android:text="Yoga Aasans"
+                           android:textSize="15sp"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent" />
+
+
+                   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                   <HorizontalScrollView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:scrollbars="none">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal">
+
+
+
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/five"
+                               android:layout_marginEnd="10dp"
+                               />
+
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/six"
+                               />
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/seven"
+                               android:layout_marginEnd="10dp"
+                               />
+
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/eight"
+                               />
+
+
+
+
+
+
+                       </LinearLayout>
+
+                   </HorizontalScrollView>
+
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginVertical="5dp"
+                   android:background="@drawable/round"
+                   android:backgroundTint="#f3f7f6"
+                   android:orientation="vertical"
+                   android:padding="20dp">
+
+
+                   <androidx.constraintlayout.widget.ConstraintLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:id="@+id/tvAyurvediavoid"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/roboto_bold"
+                           android:text="Things to avoid"
+                           android:textSize="15sp"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent" />
+
+
+                   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                   <HorizontalScrollView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:scrollbars="none">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal">
+
+
+
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/nine"
+                               android:layout_marginEnd="10dp"
+                               />
+
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/ten"
+                               />
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/eleven"
+                               android:layout_marginEnd="10dp"
+                               />
+
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/twelve"
+                               />
+
+
+
+
+
+
+                       </LinearLayout>
+
+                   </HorizontalScrollView>
+
+
+               </LinearLayout>
+
+
+               <TextView
+                   android:id="@+id/tvPCOS"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/roboto_bold"
+                   android:text="PCOS"
+                   android:layout_gravity="center"
+                   android:textColor="#273c2c"
+                   android:textSize="25sp" />
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/roboto_bold"
+                   android:text="(Polycystic Ovarian Syndrome)"
+                   android:layout_gravity="center"
+                   android:textColor="#273c2c"
+                   android:textSize="15sp" />
+
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginVertical="5dp"
+                   android:background="@drawable/round"
+                   android:backgroundTint="#f3f7f6"
+                   android:orientation="vertical"
+                   android:padding="20dp">
+
+
+                   <androidx.constraintlayout.widget.ConstraintLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/roboto_bold"
+                           android:text="Remedies"
+                           android:textSize="15sp"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent" />
+
+
+                   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                   <HorizontalScrollView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:scrollbars="none">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal">
+
+
+
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/pc3"
+                               android:layout_marginEnd="10dp"
+                               />
+
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/pc4"
+                               />
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/pc5"
+                               />
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/pc6"
+                               />
+
+
+
+
+
+
+
+                       </LinearLayout>
+
+                   </HorizontalScrollView>
+
+
+               </LinearLayout>
+               <!--               <TextView-->
+               <!--                   android:id="@+id/tvPCOS"-->
+               <!--                   android:layout_width="wrap_content"-->
+               <!--                   android:layout_height="wrap_content"-->
+               <!--                   android:fontFamily="@font/roboto_bold"-->
+               <!--                   android:text="PCOS"-->
+               <!--                   android:layout_gravity="center"-->
+               <!--                   android:textColor="#273c2c"-->
+               <!--                   android:textSize="25sp" />-->
+
+               <!--               <TextView-->
+
+               <!--                   android:layout_width="wrap_content"-->
+               <!--                   android:layout_height="wrap_content"-->
+               <!--                   android:fontFamily="@font/roboto_bold"-->
+               <!--                   android:text="(Polycystic Ovarian Syndrome)"-->
+               <!--                   android:layout_gravity="center"-->
+               <!--                   android:textColor="#273c2c"-->
+               <!--                   android:textSize="15sp" />-->
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginVertical="5dp"
+                   android:background="@drawable/round"
+                   android:backgroundTint="#f3f7f6"
+                   android:orientation="vertical"
+                   android:padding="20dp">
+
+
+                   <androidx.constraintlayout.widget.ConstraintLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/roboto_bold"
+                           android:text="Yoga Aasans"
+                           android:textSize="15sp"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent" />
+
+
+                   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                   <HorizontalScrollView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:scrollbars="none">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal">
+
+
+
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/pc1"
+                               android:layout_marginEnd="10dp"
+                               />
+
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/pc2"
+                               />
+
+
+
+
+
+
+
+                       </LinearLayout>
+
+                   </HorizontalScrollView>
+
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginVertical="5dp"
+                   android:background="@drawable/round"
+                   android:backgroundTint="#f3f7f6"
+                   android:orientation="vertical"
+                   android:padding="20dp">
+
+
+                   <androidx.constraintlayout.widget.ConstraintLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/roboto_bold"
+                           android:text="Things to avoid"
+                           android:textSize="15sp"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent" />
+
+
+                   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                   <HorizontalScrollView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:scrollbars="none">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal">
+
+
+
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/pcccccccc9"
+                               android:layout_marginEnd="10dp"
+                               />
+
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="90dp"
+                               android:src="@drawable/pcccccccc10"
+                               />
+
+
+
+
+
+
+                       </LinearLayout>
+
+                   </HorizontalScrollView>
+
+
+               </LinearLayout>
+
+
+           </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+
+            android:visibility="visible"
+            android:id="@+id/fever"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/tvFever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="You may have Fever"
+                android:layout_gravity="center"
+                android:textColor="#273c2c"
+                android:textSize="25sp" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#f3f7f6"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Remedies"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/fever1"
+                            android:layout_marginEnd="10dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/fever2"
+                            />
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/fever3"
+                            android:layout_marginEnd="10dp"
+                            />
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#f3f7f6"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Yoga Aasans"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/fever4"
+                            android:layout_marginEnd="10dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/fever5"
+                            />
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/fever6"
+                            android:layout_marginEnd="10dp"
+                            />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/hypoxia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvHypoxia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="You may have Hypoxia"
+                android:layout_gravity="center"
+                android:textColor="#273c2c"
+                android:textSize="25sp" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#f3f7f6"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Remedies"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/hypoxia4"
+                            android:layout_marginEnd="10dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/hypoxia5"
+                            />
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/hypoxia6"
+                            android:layout_marginEnd="10dp"
+                            />
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#f3f7f6"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Yoga Aasans"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/hypoxia2"
+                            android:layout_marginEnd="10dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/hypoxia3"
+                            />
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/hpoxia1"
+                            android:layout_marginEnd="10dp"
+                            />
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/stress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvStress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="You may have Stress"
+                android:layout_gravity="center"
+                android:textColor="#273c2c"
+                android:textSize="25sp" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#f3f7f6"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Remedies"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/stress3"
+                            android:layout_marginEnd="10dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/stress4"
+                            />
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/stress5"
+                            android:layout_marginEnd="10dp"
+                            />
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#f3f7f6"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Yoga Aasans"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/stress1"
+                            android:layout_marginEnd="10dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/stress2"
+                            />
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/Pneumonia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvPneumonia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="You may have Pneumonia"
+                android:layout_gravity="center"
+                android:textColor="#273c2c"
+                android:textSize="25sp" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#f3f7f6"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Remedies"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/pneumonia1"
+                            android:layout_marginEnd="10dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/pneumonia2"
+                            />
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/pneumonia3"
+                            android:layout_marginEnd="10dp"
+                            />
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#f3f7f6"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Yoga Aasans"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/pneumonia4"
+                            android:layout_marginEnd="10dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/pneumonia5"
+                            />
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/pneumonia6"
+                            />
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

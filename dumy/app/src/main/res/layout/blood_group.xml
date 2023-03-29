@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rgBloodGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <RadioButton
+            android:id="@+id/rbAp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A+"/>
+        <RadioButton
+            android:id="@+id/rbAn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A-"/>
+        <RadioButton
+            android:id="@+id/rbBp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B+"/>
+        <RadioButton
+            android:id="@+id/rbBn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B-"/>
+        <RadioButton
+            android:id="@+id/rbABp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AB+"/>
+        <RadioButton
+            android:id="@+id/rbABn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AB-"/>
+        <RadioButton
+            android:id="@+id/rbOp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O+"/>
+        <RadioButton
+            android:id="@+id/rbOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O-"/>
+
+    </RadioGroup>
+
+</LinearLayout>

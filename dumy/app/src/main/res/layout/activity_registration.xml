@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/metric"
+    android:orientation="vertical"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="260dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#fccda3"
+        android:background="@drawable/round"
+        app:cardCornerRadius="40dp"
+
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="30dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/linetest"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/skipRegister"
+                    android:src="@drawable/skip"
+                    android:layout_gravity="end"/>
+
+                <TextView
+                    android:id="@+id/tvWelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Biometric"
+                    android:textColor="@color/dark"
+                    android:textSize="30sp"/>
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Name"
+                    android:layout_marginStart="20dp"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round"
+                    android:backgroundTint="@color/back">
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:paddingHorizontal="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="3"
+                        android:background="@android:color/transparent"
+
+
+                         />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="20dp"
+
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Age"
+                            android:textSize="18sp"/>
+
+                        <LinearLayout
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/back"
+                            android:background="@drawable/round">
+
+                            <EditText
+                                android:id="@+id/etAge"
+                                android:paddingHorizontal="30dp"
+                                android:layout_width="match_parent"
+                                android:inputType="number"
+                                android:layout_height="48dp"
+                                android:layout_marginStart="0dp"
+                                android:layout_weight="3"
+                                android:hint="Yrs"
+                                android:background="@android:color/transparent"
+
+
+                                />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Weight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="20dp"
+
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Weight"
+                            android:textSize="18sp"/>
+
+                        <LinearLayout
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/back"
+                            android:background="@drawable/round">
+
+                            <EditText
+                                android:id="@+id/etWeight"
+                                android:paddingHorizontal="30dp"
+                                android:layout_width="match_parent"
+                                android:inputType="number"
+                                android:layout_height="48dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="3"
+                                android:hint="Kg"
+                                android:background="@android:color/transparent"
+
+
+                                />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvHeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="20dp"
+
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Height"
+                            android:textSize="18sp"/>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/back"
+                            android:background="@drawable/round">
+
+                            <EditText
+                                android:id="@+id/etHeight"
+                                android:paddingHorizontal="30dp"
+                                android:layout_width="match_parent"
+                                android:inputType="number"
+                                android:layout_height="48dp"
+                                android:layout_marginStart="0dp"
+                                android:layout_weight="3"
+                                android:hint="Cms"
+                                android:background="@android:color/transparent"
+
+
+                                />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvGender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="20dp"
+
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Gender"
+                            android:textSize="18sp"/>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/back"
+                            android:weightSum="2"
+                            android:layout_marginEnd="5dp"
+                            android:background="@drawable/round">
+
+                            <TextView
+                                android:id="@+id/etGender"
+
+                                android:layout_width="65dp"
+                                android:layout_height="48dp"
+                                android:layout_weight="1"
+                                android:paddingStart="10dp"
+                                android:paddingVertical="12dp"
+
+                                />
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/selectGender"
+                                android:src="@drawable/select"
+                                android:layout_marginVertical="12dp"
+
+                               />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+
+
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Vaccinated"
+                            android:textSize="18sp"/>
+
+                        <LinearLayout
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/back"
+                            android:background="@drawable/round">
+
+                            <TextView
+                                android:id="@+id/tvVaccine"
+                                android:paddingHorizontal="30dp"
+                                android:layout_width="65dp"
+                                android:layout_height="48dp"
+                                android:paddingStart="10dp"
+                                android:paddingVertical="12dp"
+                                />
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/selectVaccine"
+                                android:src="@drawable/select"
+                                android:layout_marginVertical="12dp"
+
+                               />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+
+
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Blood Group"
+                            android:textSize="16sp"/>
+
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/back"
+                            android:background="@drawable/round">
+
+                            <TextView
+                                android:id="@+id/tvBlood"
+                                android:paddingHorizontal="30dp"
+                                android:layout_width="65dp"
+                                android:layout_height="48dp"
+                                android:paddingStart="10dp"
+                                android:paddingVertical="12dp"
+
+
+
+
+
+
+
+                                />
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/selectBloodGroup"
+                                android:src="@drawable/select"
+                                android:layout_marginVertical="12dp"
+
+                                />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+                    <RadioGroup
+                        android:id="@+id/rgGender"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start">
+
+                        <RadioButton
+                            android:id="@+id/rbMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/rbFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/rbPrefer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Prefer not say"
+                            />
+
+
+                    </RadioGroup>
+
+
+
+
+
+
+                        <RadioGroup
+                            android:id="@+id/rgvaccine"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/rbYes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yes"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/rbNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                />
+
+
+
+
+                        </RadioGroup>
+
+
+
+
+
+
+                        <RadioGroup
+                            android:id="@+id/rgBloodGroup"
+                            android:visibility="gone"
+                            android:layout_gravity="end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/rbAp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="A+"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/rbAn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="A-"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/rbBp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B+"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/rbBn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B-"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/rbABp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AB+"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/rbABn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AB-"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/rbOn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="O-"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/rbOp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="O+"
+                                />
+
+
+                        </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/cycledays"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Menstruation Cycle"
+                        android:textSize="18sp"/>
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/back"
+                        android:background="@drawable/round">
+
+                        <EditText
+                            android:id="@+id/etMC"
+                            android:paddingHorizontal="30dp"
+                            android:layout_width="match_parent"
+                            android:inputType="number"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_weight="3"
+                            android:hint="in Days"
+                            android:background="@android:color/transparent"
+
+
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/tvDis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Medical Issues"
+                    android:layout_marginStart="20dp"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/back"
+                    android:background="@drawable/round">
+
+                    <LinearLayout
+
+
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:paddingVertical="12dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvAirth"
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disease_text"
+                                android:text="Airthritis"
+                                android:paddingHorizontal="5dp"/>
+
+                            <TextView
+                                android:id="@+id/tvDiab"
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disease_text"
+                                android:text="Diabetes"
+                                android:paddingHorizontal="5dp"/>
+                            <TextView
+                                android:id="@+id/tvlowImm"
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disease_text"
+                                android:text="Low Immunity"
+                                android:paddingHorizontal="5dp"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp">
+
+                            <TextView
+                                android:id="@+id/tvHighbp"
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disease_text"
+                                android:text="High BP"
+                                android:paddingHorizontal="5dp"/>
+
+                            <TextView
+                                android:id="@+id/tvLowbp"
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disease_text"
+                                android:text="Low BP"
+                                android:paddingHorizontal="5dp"/>
+
+                            <TextView
+                                android:id="@+id/tvPCOS"
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disease_text"
+                                android:text="PCOS"
+                                android:paddingHorizontal="5dp"/>
+
+                            <TextView
+                                android:id="@+id/tvPCOD"
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/disease_text"
+                                android:text="PCOD"
+                                android:paddingHorizontal="5dp"/>
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/selectDisease"
+                        android:src="@drawable/select"
+                        android:layout_marginVertical="12dp"
+                        android:layout_marginEnd="20dp"
+
+                        android:layout_marginStart="30dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_Disease"
+                    android:layout_gravity="end"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cbArth"
+                        android:text="Airthritis"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cbDiabetes"
+                        android:text="Diabetes"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cbLowImmune"
+                        android:text="Low Immunity"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cbHighBp"
+                        android:text="High BP"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cbLowBp"
+                        android:text="Low BP"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cbPCOS"
+                        android:text="PCOS"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cbPCOD"
+                        android:text="PCOD"/>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+                <Button
+                    android:layout_marginVertical="20dp"
+                    android:id="@+id/btnRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round"
+                    android:text="Register"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

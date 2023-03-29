@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+
+        >
+
+        <item
+            android:id="@+id/dincharya"
+            android:title="Dhincharya"
+            android:icon="@drawable/dhin"/>
+
+        <item
+            android:id="@+id/Ayushop"
+            android:title="AYUSH shop"
+            android:icon="@drawable/aayushshop"/>
+
+        <item
+            android:id="@+id/bar"
+            android:title="Weather"
+            android:icon="@drawable/cloud"/>
+
+
+
+
+        <item
+            android:id="@+id/nav_helpline"
+            android:icon="@drawable/phone"
+
+            android:title="Call Helpline(1075)"
+
+            />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/cogwheel"
+            android:title="Settings"
+            />
+
+
+
+
+
+    </group>
+
+    <item
+        android:id="@+id/privacy"
+        android:title="Privacy Policy"
+        />
+
+    <item
+        android:id="@+id/terms"
+        android:title="Terms of Use"
+        />
+
+    <item
+        android:id="@+id/appversion"
+        android:title="App Version 2.0.1"
+        />
+
+
+
+</menu>

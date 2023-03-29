@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cltouch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manual">
+
+    <ImageView
+        android:id="@+id/ivMain"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/logo_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+
+        android:id="@+id/share"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/share"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+
+        android:id="@+id/ivmenu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+
+        android:layout_marginTop="30dp"
+        android:src="@drawable/menu"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/cvNavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivMain">
+
+        <ScrollView
+            android:id="@+id/svHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp">
+
+                <TextView
+                    android:id="@+id/tvHomeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Hi Himanshi,"
+                    android:textColor="#273c2c"
+                    android:textSize="35sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:background="@drawable/round"
+                    android:backgroundTint="#f3f7f6"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <ProgressBar
+                                    android:id="@+id/Progress"
+                                    android:layout_width="100dp"
+                                    android:layout_height="80dp"
+                                    android:indeterminateOnly="false"
+                                    android:progressDrawable="@drawable/progress_bar"
+                                    android:rotation="-90"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:progress="60" />
+
+
+                                <ImageView
+                                    android:id="@+id/ivWater"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/water"
+                                    app:layout_constraintBottom_toTopOf="@id/tvWater"
+                                    app:layout_constraintEnd_toEndOf="@id/Progress"
+                                    app:layout_constraintHorizontal_bias="0.49"
+                                    app:layout_constraintStart_toStartOf="@id/Progress"
+                                    app:layout_constraintTop_toTopOf="@id/Progress"
+                                    app:layout_constraintVertical_bias="0.917" />
+
+                                <TextView
+                                    android:id="@+id/tvWater"
+                                    android:layout_width="35dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginBottom="16dp"
+
+                                    android:gravity="center"
+                                    android:text="2/4L"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/Progress"
+                                    app:layout_constraintEnd_toEndOf="@id/Progress"
+                                    app:layout_constraintHorizontal_bias="0.507"
+                                    app:layout_constraintStart_toStartOf="@id/Progress" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ProgressBar
+                                    android:id="@+id/Progress2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="80dp"
+                                    android:indeterminateOnly="false"
+                                    android:progressDrawable="@drawable/progress_bar"
+                                    android:rotation="-90"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:progress="60" />
+
+
+                                <ImageView
+                                    android:id="@+id/ivYoga"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/yoga"
+                                    app:layout_constraintBottom_toTopOf="@id/tvYoga"
+                                    app:layout_constraintEnd_toEndOf="@id/Progress2"
+                                    app:layout_constraintHorizontal_bias="0.49"
+                                    app:layout_constraintStart_toStartOf="@id/Progress2"
+                                    app:layout_constraintTop_toTopOf="@id/Progress2"
+                                    app:layout_constraintVertical_bias="0.917" />
+
+                                <TextView
+                                    android:id="@+id/tvYoga"
+                                    android:layout_width="35dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginBottom="16dp"
+
+                                    android:gravity="center"
+                                    android:text="2/4"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/Progress2"
+                                    app:layout_constraintEnd_toEndOf="@id/Progress2"
+                                    app:layout_constraintHorizontal_bias="0.507"
+                                    app:layout_constraintStart_toStartOf="@id/Progress2" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ProgressBar
+                                    android:id="@+id/Progress3"
+                                    android:layout_width="100dp"
+                                    android:layout_height="80dp"
+                                    android:indeterminateOnly="false"
+                                    android:progressDrawable="@drawable/progress_bar"
+                                    android:rotation="-90"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:progress="60" />
+
+
+                                <ImageView
+                                    android:id="@+id/ivTemp"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/body_temp"
+                                    app:layout_constraintBottom_toTopOf="@id/tvTemp"
+                                    app:layout_constraintEnd_toEndOf="@id/Progress3"
+                                    app:layout_constraintHorizontal_bias="0.49"
+                                    app:layout_constraintStart_toStartOf="@id/Progress3"
+                                    app:layout_constraintTop_toTopOf="@id/Progress3"
+                                    app:layout_constraintVertical_bias="0.917" />
+
+                                <TextView
+                                    android:id="@+id/tvTemp"
+                                    android:layout_width="35dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginBottom="16dp"
+
+                                    android:gravity="center"
+                                    android:text="98.8F"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/Progress3"
+                                    app:layout_constraintEnd_toEndOf="@id/Progress3"
+                                    app:layout_constraintHorizontal_bias="0.507"
+                                    app:layout_constraintStart_toStartOf="@id/Progress3" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ProgressBar
+                                    android:id="@+id/Progress4"
+                                    android:layout_width="100dp"
+                                    android:layout_height="80dp"
+                                    android:indeterminateOnly="false"
+                                    android:progressDrawable="@drawable/progress_bar"
+                                    android:rotation="-90"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:progress="60" />
+
+
+                                <ImageView
+                                    android:id="@+id/ivbeat"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/beat"
+                                    app:layout_constraintBottom_toTopOf="@id/tvBeat"
+                                    app:layout_constraintEnd_toEndOf="@id/Progress4"
+                                    app:layout_constraintHorizontal_bias="0.49"
+                                    app:layout_constraintStart_toStartOf="@id/Progress4"
+                                    app:layout_constraintTop_toTopOf="@id/Progress4"
+                                    app:layout_constraintVertical_bias="0.917" />
+
+                                <TextView
+                                    android:id="@+id/tvBeat"
+                                    android:layout_width="35dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginBottom="16dp"
+
+                                    android:gravity="center"
+                                    android:text="120/80"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/Progress4"
+                                    app:layout_constraintEnd_toEndOf="@id/Progress4"
+                                    app:layout_constraintHorizontal_bias="0.507"
+                                    app:layout_constraintStart_toStartOf="@id/Progress4" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ProgressBar
+                                    android:id="@+id/Progress5"
+                                    android:layout_width="100dp"
+                                    android:layout_height="80dp"
+                                    android:indeterminateOnly="false"
+                                    android:progressDrawable="@drawable/progress_bar"
+                                    android:rotation="-90"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:progress="60" />
+
+
+                                <ImageView
+                                    android:id="@+id/ivStep"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/steps_count"
+                                    app:layout_constraintBottom_toTopOf="@id/tvStep"
+                                    app:layout_constraintEnd_toEndOf="@id/Progress5"
+                                    app:layout_constraintHorizontal_bias="0.49"
+                                    app:layout_constraintStart_toStartOf="@id/Progress5"
+                                    app:layout_constraintTop_toTopOf="@id/Progress5"
+                                    app:layout_constraintVertical_bias="0.917" />
+
+                                <TextView
+                                    android:id="@+id/tvStep"
+                                    android:layout_width="43dp"
+                                    android:layout_height="21dp"
+                                    android:layout_marginBottom="16dp"
+
+                                    android:gravity="center"
+                                    android:text="6/12 km"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/Progress5"
+                                    app:layout_constraintEnd_toEndOf="@id/Progress5"
+                                    app:layout_constraintHorizontal_bias="0.508"
+                                    app:layout_constraintStart_toStartOf="@id/Progress5" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:background="@drawable/round"
+                    android:backgroundTint="#f3f7f6"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvDrinkingWater"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Drinking Water"
+                            android:textSize="20sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/tvcups"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="0/8 cups"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:id="@+id/cupContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tvDrinkingWater">
+
+                            <ImageView
+                                android:id="@+id/ivcup1"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/glass_light"
+                                android:tag="1" />
+
+                            <ImageView
+                                android:id="@+id/ivcup2"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/glass_light"
+                                android:tag="2" />
+
+                            <ImageView
+                                android:id="@+id/ivcup3"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/glass_light"
+                                android:tag="3" />
+
+                            <ImageView
+                                android:id="@+id/ivcup4"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/glass_light"
+                                android:tag="4" />
+
+                            <ImageView
+                                android:id="@+id/ivcup5"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/glass_light"
+                                android:tag="5" />
+
+                            <ImageView
+                                android:id="@+id/ivcup6"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/glass_light"
+                                android:tag="6" />
+
+                            <ImageView
+                                android:id="@+id/ivcup7"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/glass_light"
+                                android:tag="7" />
+
+                            <ImageView
+                                android:id="@+id/ivcup8"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/glass_light"
+                                android:tag="8" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/ivaddcups"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/plus"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tvcups" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:background="@drawable/round"
+                    android:backgroundTint="#f3f7f6"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvStepsCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Step Count"
+                            android:textSize="20sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="800/2000 steps"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/ivStepsCount"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/pedometer"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tvStepsCount" />
+
+
+                        <ProgressBar
+                            android:id="@+id/StepProgress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+
+
+                            android:progressDrawable="@drawable/linear_progress"
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/ivStepsCount"
+                            app:layout_constraintTop_toBottomOf="@id/tvStepsCount"
+                            tools:progress="40" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:background="@drawable/round"
+                    android:backgroundTint="#f3f7f6"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvYogaAsans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Recommeded Yoga Asans"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="BMI: 19-Normal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:layout_marginVertical="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/yoga_xml"
+                                android:backgroundTint="@color/white"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/yoga_xml"
+                                    android:backgroundTint="#f3f7f6" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:layout_marginVertical="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/yoga_xml"
+                                android:backgroundTint="@color/white"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/yoga_xml"
+                                    android:backgroundTint="#f3f7f6" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:layout_marginVertical="5dp"
+                                android:background="@drawable/yoga_xml"
+                                android:backgroundTint="@color/white"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/yoga_xml"
+                                    android:backgroundTint="#f3f7f6" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:background="@drawable/round"
+                    android:backgroundTint="#f3f7f6"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvAyurvedic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Popular Ayurvedic Remedies"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:layout_marginVertical="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/yoga_xml"
+                                android:backgroundTint="@color/white"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/yoga_xml"
+                                    android:backgroundTint="#f3f7f6" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:layout_marginVertical="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/yoga_xml"
+                                android:backgroundTint="@color/white"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/yoga_xml"
+                                    android:backgroundTint="#f3f7f6" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:layout_marginVertical="5dp"
+                                android:background="@drawable/yoga_xml"
+                                android:backgroundTint="@color/white"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/yoga_xml"
+                                    android:backgroundTint="#f3f7f6" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/app1"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:src="@drawable/app1"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        />
+
+    <ImageView
+        android:id="@+id/app2"
+        android:visibility="gone"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:src="@drawable/app2"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <ImageView
+        android:id="@+id/app3"
+        android:visibility="gone"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:src="@drawable/app3"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <ImageView
+        android:id="@+id/app4"
+        android:visibility="gone"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:src="@drawable/app4"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="30dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvNavigation"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:backgroundTint="#fccda3"
+        android:weightSum="5"
+        app:cardCornerRadius="30dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:paddingHorizontal="0dp"
+            android:weightSum="5">
+
+
+            <ImageView
+                android:id="@+id/ivhome"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/home_dark" />
+
+            <ImageView
+                android:id="@+id/ivnews"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/lnews" />
+
+
+            <ImageView
+                android:id="@+id/ivwifi"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/wifi_light" />
+
+            <ImageView
+                android:id="@+id/ivgame"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/game" />
+
+
+            <ImageView
+                android:id="@+id/ivaccount"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/account" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

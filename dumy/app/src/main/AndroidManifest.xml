@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dumy">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="waayu"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Waayu">
+        <activity
+            android:name="com.example.dumy.Dhincharya"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dumy.Controlling"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dumy.Bluetooth"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dumy.Health"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dumy.shop"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dumy.manual"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dumy.games"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dumy.weather"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dumy.new_user"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dumy.NavDrawerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_nav_drawer"
+            android:theme="@style/Theme.Waayu.NoActionBar" />
+        <activity
+            android:name="com.example.dumy.Screen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dumy.Registration"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dumy.SignUp"
+            android:exported="false"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name="com.example.dumy.Language"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dumy.trackHealth"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dumy.front"
+            android:exported="false" />
+        <activity
+            android:name="com.example.dumy.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

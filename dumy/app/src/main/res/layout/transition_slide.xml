@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:weightSum="4"
+    android:background="#f3f7f6">
+
+    <LinearLayout
+        android:id="@+id/llTranssition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f3f7f6"
+        android:orientation="vertical"
+        android:layout_weight="2"
+
+       >
+
+        <ImageView
+            android:id="@+id/slide1"
+            android:backgroundTint="#edf7f9"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/one" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/llDots"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/btnStart"
+            android:text="Get Started"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/round"
+            android:visibility="gone"
+            android:alpha="0.75"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/ivInd1"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/selected"
+        />
+
+    <ImageView
+        android:id="@+id/ivInd2"
+        android:layout_width="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="15dp"
+        android:src="@drawable/selected"
+        />
+
+    <ImageView
+        android:id="@+id/ivInd3"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+
+        android:src="@drawable/selected"
+         />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
